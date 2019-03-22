@@ -12,5 +12,11 @@
       "matches": ["https://github.com/*"],
       "js": ["index.js"]
     }
-  ]
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "options_ui": {
+      "page": "options.html"
+  }
 }
