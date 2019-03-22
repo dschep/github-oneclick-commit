@@ -1,26 +1,27 @@
 (function() {
-    'use strict';
-
-    var titles = [
-        'Democracy Dies in Darkness',
-        'Welcome to Hell',
-        'Screaming for Vengeance',
-        'Reign in Blood',
-        'The Erosion of Sanity',
-        'Altars of Madness',
-        'Vulgar Display of Power',
-        'Seasons in the Abyss',
-        'Slowly We Rot',
-        'Bonded by Blood',
-        'Storm of the Light’s Bane',
-        'Operation: Mindcrime',
-        'The Downward Spiral',
-        'All Hope Is Gone',
-        'Kill ’Em All',
-        'Peace Sells … but Who’s Buying?',
-    ];
-    var title = titles[Math.floor(Math.random() * titles.length)];
-    Array.slice(document.querySelectorAll('.masthead-tagline a,.header-tagline')).map(function(element) {
-        element.innerHTML = title;
-    });
+  const messages = [
+    'Fix bug in IE',
+    '¯\\_(ツ)_/¯',
+    'Should work now',
+    'WTAF',
+  ];
+  const addButtons = () => {
+    const commitSummaryInput = document.querySelector('#commit-summary-input');
+    if (!commitSummaryInput || commitSummaryInput.classList.contains('oneclicked')) {
+      return;
+    }
+    commitSummaryInput.classList.add('oneclicked');
+    messages.reverse().map(msg => {
+      const button = document.createElement('button');
+      button.className = 'btn btn-default';
+      button.textContent = msg;
+      button.onclick = event => {
+        commitSummaryInput.value = msg;
+      }
+      commitSummaryInput.parentElement.insertBefore(button, commitSummaryInput.nextSibling);
+      commitSummaryInput.parentElement.insertBefore(document.createTextNode(' '), button.nextSibling);
+    })
+  }
+  addButtons()
+  setInterval(addButtons, 1000)
 })();

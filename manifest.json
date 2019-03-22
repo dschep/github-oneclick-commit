@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Metal WaPo 🤘",
-  "description": "Metal Washington Post headlines 🤘",
+  "name": "One click Github Commit",
+  "description": "Silly idea from @HNOnion",
   "version": "1.0",
   "icons": {
     "32": "icon32.png",
@@ -9,7 +9,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://*.washingtonpost.com/*"],
+      "matches": ["https://github.com/*"],
       "js": ["index.js"]
     }
   ]
