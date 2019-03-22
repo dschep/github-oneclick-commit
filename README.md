@@ -1,4 +1,4 @@
-# :octocat::zap: Github One click commit
+# :shipit: Github One click commit
 A silly browser extension to add quick commit message buttons to the online editor in Github.
 
 ### Demo
