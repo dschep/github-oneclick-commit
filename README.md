@@ -1,7 +1,7 @@
 # Github One click commit
 A silly browser extension to add quick commit message buttons to the online editor in Github.
 
-[![](./firefox-badge.png)](https://addons.mozilla.org/en-US/firefox/addon/oneclick-github-commit/)
+[![](./firefox-badge.png)](https://addons.mozilla.org/en-US/firefox/addon/github-oneclick-commit/)
 [![](./chrome-badge.png)](https://chrome.google.com/webstore/detail/one-click-github-commit/gjhihafafhbfdndoaailnfhjhmbcmgja)
 
 ### Demo
